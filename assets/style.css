@@ -18,7 +18,7 @@ div.container {
   background-color: aquamarine;
   padding: 30px 40px;
   text-align: center;
-  flex: 1 0 calc(25% - 20px);
+  flex: 0 0 calc(25% - 20px);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -49,10 +49,6 @@ button:active {
 }
 @media only screen and (min-width: 752px) and (max-width: 1024px) {
   .product-card {
-    flex: 1 0 calc(33.3% - 20px);
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .products-rows {
+    flex: 0 0 calc(33.3% - 20px);
   }
 }
