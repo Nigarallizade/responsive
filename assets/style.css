@@ -1,0 +1,29 @@
+div.container {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+}
+.products-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-card {
+  margin: 10px 10px;
+  background-color: aquamarine;
+  padding: 10px;
+  text-align: center;
+  flex: 1 0 calc(25% - 20px);
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .products-row {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .products-rows {
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .products-rows {
+  }
+}
