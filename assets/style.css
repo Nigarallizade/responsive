@@ -1,3 +1,9 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 div.container {
   width: 80%;
   padding: 20px;
@@ -8,19 +14,42 @@ div.container {
   flex-wrap: wrap;
 }
 .product-card {
-  margin: 10px 10px;
+  margin: 10px;
   background-color: aquamarine;
-  padding: 10px;
+  padding: 30px 40px;
   text-align: center;
   flex: 1 0 calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-@media only screen and (min-width: 300px) and (max-width: 600px) {
+button {
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  background-color: violet;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
+button:active {
+  background-color: blue;
+  color: aqua;
+}
+@media only screen and (min-width: 300px) and (max-width: 752px) {
   .products-row {
     flex-direction: column;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .products-rows {
+@media only screen and (min-width: 752px) and (max-width: 1024px) {
+  .product-card {
+    flex: 1 0 calc(33.3% - 20px);
   }
 }
 @media only screen and (min-width: 1024px) {
